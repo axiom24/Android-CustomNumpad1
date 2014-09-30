@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/inputdata1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:textSize="30dp"
+        android:textColor="#80ff80"
+        android:paddingLeft="100dp"
+
+        />
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:inputType="phone">
+
+        <requestFocus />
+    </EditText>
+
+    <com.app.customnumpad.CustomNumpadView
+        android:id="@+id/numpadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:visibility="visible" />
+
+</LinearLayout>
