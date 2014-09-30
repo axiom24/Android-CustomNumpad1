@@ -5,6 +5,11 @@ import android.inputmethodservice.Keyboard;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.View;
+import android.widget.EditText;
+import android.util.Log;
+import android.view.KeyEvent;
+
 
 public class CustomNumpadActivity extends Activity {
     /** Called when the activity is first created. */
@@ -23,5 +28,18 @@ public class CustomNumpadActivity extends Activity {
         CustomNumpadView cnv = (CustomNumpadView) findViewById(R.id.numpadView);
         cnv.setActionListenerActivity(this);
         System.out.println("Came here successfully");
-    }
+
+        final EditText edittext = (EditText) findViewById(R.id.editText1);
+        /*edittext.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                Log.v("KeyPressed: ", String.valueOf(keyCode));
+                if (keyCode == KeyEvent.KEYCODE_ENTER) {
+                    String textValue = edittext.getText().toString();
+                    Log.v("EditTextValue: ", textValue);
+                }
+                return true;
+            }
+    }); */
+}
 }
