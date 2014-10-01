@@ -54,9 +54,9 @@ public class CustomNumpadView extends KeyboardView {
 
             if(event.getKeyCode() == KeyEvent.KEYCODE_ENTER) {
 
-                   final EditText editText1 = (EditText)findViewById(R.id.editText1);
+                   //final EditText editText1 = (EditText)findViewById(R.id.editText1);
 
-                   String inputValue = editText1.getText().toString();
+                   //String inputValue = editText1.getText().toString();
 
                    //String valu = event.toString();
                    Log.v("The value is ", inputValue);
